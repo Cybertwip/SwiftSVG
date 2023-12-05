@@ -49,7 +49,7 @@ public extension NSBezierPath {
                 case .closePath:
                     path.closeSubpath()
                 case .default:
-                    throw "unsupported"
+                    return path
                 }
             }
             return path
